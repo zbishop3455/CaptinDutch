@@ -5,14 +5,21 @@ import java.awt.image.BufferedImage;
 
 public class Tile {
 
+    public static Tile[] tiles = new Tile[6080];
+
+    public static final int TILEWIDTH = 64;
+    public static final int TILEHEIGHT = 64;
+
+    protected boolean solid = false;
+
     protected BufferedImage texture;
     protected final int id;
-    protected final int TILEWIDTH = 64;
-    protected final int TILEHEIGHT = 64;
 
     public Tile(BufferedImage texture, int id) {
         this.texture = texture;
         this.id = id;
+
+        tiles[id] = this;
     }
 
     public void tick() {
@@ -25,6 +32,10 @@ public class Tile {
 
     public int getId(){
         return this.id;
+    }
+
+    public boolean isSolid() {
+        return solid;
     }
 
 }

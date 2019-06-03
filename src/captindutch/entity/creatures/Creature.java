@@ -5,9 +5,9 @@ import captindutch.entity.Entity;
 public abstract class Creature extends Entity {
 
     public static final int DEFUALT_HEALTH = 100;
-    public static final float DEFAULT_SPEED = 3.0f;
-    public static final int DEFAULT_WIDTH = 64;
-    public static final int DEFAULT_HEIGHT = 64;
+    public static final float DEFAULT_SPEED = 6.0f;
+    public static final int DEFAULT_WIDTH = 32;
+    public static final int DEFAULT_HEIGHT = 32;
 
     protected int health;
     protected float speed;

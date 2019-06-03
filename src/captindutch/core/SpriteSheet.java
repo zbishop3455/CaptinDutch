@@ -14,4 +14,13 @@ public class SpriteSheet {
         return sheet.getSubimage(x, y, width, height);
     }
 
+    public int getWidth() {
+        return sheet.getWidth();
+    }
+
+    public int getHeight() {
+        return sheet.getHeight();
+    }
+
+
 }

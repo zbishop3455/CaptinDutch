@@ -2,21 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0d8f0697-ae14-4b0c-8bfe-c37169ea1ee6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/captindutch/input/KeyManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/captindutch/tiles/Tile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/captindutch/worlds/World.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/core/Display.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/core/Display.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/core/Game.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/core/Game.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/core/Assets.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/core/Assets.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/core/SpriteSheet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/core/SpriteSheet.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/states/GameState.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/states/GameState.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/states/State.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CaptinDutch/captindutch/states/State.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/captindutch/Entity/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/entity/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/captindutch/Entity/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/entity/creatures/Creature.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/captindutch/Entity/creatures/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/entity/creatures/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/captindutch/core/Display.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/core/Display.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CaptinDutch/spacedungeon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CaptinDutch/textures/spacedungeon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/textures/spacedungeon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/captindutch/core/Assets.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/core/Assets.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/captindutch/core/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/core/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/captindutch/core/SpriteSheet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/core/SpriteSheet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/captindutch/entity/creatures/Creature.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/entity/creatures/Creature.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/captindutch/states/GameState.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/states/GameState.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/captindutch/states/State.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/states/State.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/captindutch/tiles/GrassTile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/tiles/BackgroundTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/captindutch/tiles/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/captindutch/tiles/Tile.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,20 +34,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/captindutch/core/Game.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="129">
-              <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2484#2485#0" expanded="true" />
-                <element signature="e#2517#2518#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/captindutch/input/KeyManager.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -68,8 +54,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/captindutch/entity/creatures/Creature.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+            <state relative-caret-position="153">
+              <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
               <folding>
                 <element signature="e#483#484#0" expanded="true" />
                 <element signature="e#512#513#0" expanded="true" />
@@ -93,9 +79,25 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/captindutch/worlds/World.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#144#145#0" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#528#529#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/captindutch/entity/creatures/Player.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
+            <state relative-caret-position="340">
               <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -106,58 +108,49 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/captindutch/tiles/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+            <state relative-caret-position="187">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#388#389#0" expanded="true" />
                 <element signature="e#416#417#0" expanded="true" />
                 <element signature="e#297#298#0" expanded="true" />
                 <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#649#650#0" expanded="true" />
+                <element signature="e#670#671#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/captindutch/entity/Entity.java">
+        <entry file="file://$PROJECT_DIR$/src/captindutch/tiles/BackgroundTile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+            <state relative-caret-position="153">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#474#475#0" expanded="true" />
-                <element signature="e#515#516#0" expanded="true" />
-                <element signature="e#551#552#0" expanded="true" />
-                <element signature="e#334#335#0" expanded="true" />
-                <element signature="e#362#363#0" expanded="true" />
-                <element signature="e#401#402#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#356#357#0" expanded="true" />
-                <element signature="e#389#390#0" expanded="true" />
-                <element signature="e#415#416#0" expanded="true" />
+                <element signature="e#105#106#0" expanded="true" />
+                <element signature="e#125#126#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/captindutch/states/State.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/captindutch/core/SpriteSheet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
+            <state relative-caret-position="187">
+              <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#173#174#0" expanded="true" />
-                <element signature="e#204#205#0" expanded="true" />
+                <element signature="e#276#277#0" expanded="true" />
+                <element signature="e#337#338#0" expanded="true" />
+                <element signature="e#370#371#0" expanded="true" />
+                <element signature="e#408#409#0" expanded="true" />
+                <element signature="e#443#444#0" expanded="true" />
+                <element signature="e#482#483#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -166,24 +159,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/captindutch/states/GameState.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#353#354#0" expanded="true" />
-                <element signature="e#217#218#0" expanded="true" />
-                <element signature="e#271#272#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/captindutch/core/Display.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="271">
-              <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+            <state relative-caret-position="231">
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -192,10 +169,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/captindutch/core/Assets.java">
+        <entry file="file://$PROJECT_DIR$/src/captindutch/core/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="289">
+              <caret line="69" column="65" lean-forward="true" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -220,8 +197,6 @@
       <list>
         <option value="$PROJECT_DIR$/src/captindutch/core/Launcher.java" />
         <option value="$PROJECT_DIR$/src/captindutch/util/ImageLoader.java" />
-        <option value="$PROJECT_DIR$/src/captindutch/core/SpriteSheet.java" />
-        <option value="$PROJECT_DIR$/src/captindutch/core/Assets.java" />
         <option value="$PROJECT_DIR$/src/captindutch/StateManager.java" />
         <option value="$PROJECT_DIR$/src/captindutch/Entity/Entity.java" />
         <option value="$PROJECT_DIR$/src/captindutch/Entity/Creature.java" />
@@ -230,11 +205,17 @@
         <option value="$PROJECT_DIR$/src/captindutch/states/State.java" />
         <option value="$PROJECT_DIR$/src/captindutch/core/Display.java" />
         <option value="$PROJECT_DIR$/src/captindutch/input/KeyManager.java" />
-        <option value="$PROJECT_DIR$/src/captindutch/states/GameState.java" />
-        <option value="$PROJECT_DIR$/src/captindutch/core/Game.java" />
         <option value="$PROJECT_DIR$/src/captindutch/entity/Entity.java" />
-        <option value="$PROJECT_DIR$/src/captindutch/entity/creatures/Creature.java" />
         <option value="$PROJECT_DIR$/src/captindutch/entity/creatures/Player.java" />
+        <option value="$PROJECT_DIR$/src/captindutch/tiles/GrassTile.java" />
+        <option value="$PROJECT_DIR$/src/captindutch/tiles/RockTile.java" />
+        <option value="$PROJECT_DIR$/src/captindutch/entity/creatures/Creature.java" />
+        <option value="$PROJECT_DIR$/src/captindutch/tiles/BackgroundTile.java" />
+        <option value="$PROJECT_DIR$/src/captindutch/core/SpriteSheet.java" />
+        <option value="$PROJECT_DIR$/src/captindutch/worlds/World.java" />
+        <option value="$PROJECT_DIR$/src/captindutch/core/Assets.java" />
+        <option value="$PROJECT_DIR$/src/captindutch/core/Game.java" />
+        <option value="$PROJECT_DIR$/src/captindutch/states/GameState.java" />
         <option value="$PROJECT_DIR$/src/captindutch/tiles/Tile.java" />
       </list>
     </option>
@@ -370,12 +351,20 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559449288678</updated>
-      <workItem from="1559449292672" duration="14631000" />
+      <workItem from="1559449292672" duration="24780000" />
     </task>
+    <task id="LOCAL-00001" summary="Added movement system to Creature class. Added KeyManager class to handle key pressed and move() the player">
+      <created>1559524189595</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1559524189595</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14631000" />
+    <option name="totallyTimeSpent" value="24780000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -386,7 +375,7 @@
       <window_info id="UI Designer" />
       <window_info id="Capture Tool" />
       <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13432837" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13432837" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Messages" weight="0.32936078" />
       <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
@@ -395,8 +384,8 @@
       <window_info anchor="bottom" id="Terminal" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -411,9 +400,44 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.13432837" />
+      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" weight="0.32936078" />
+      <window_info anchor="bottom" id="Database Changes" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="5" weight="0.32936078" />
+      <window_info anchor="bottom" id="Message" order="6" />
+      <window_info anchor="bottom" id="Find" order="7" />
+      <window_info anchor="bottom" id="Run" order="8" visible="true" weight="0.32936078" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="12" />
+      <window_info anchor="right" id="Palette" order="0" />
+      <window_info anchor="right" id="Database" order="1" />
+      <window_info anchor="right" id="Theme Preview" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="6" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="7" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="8" weight="0.25" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Added movement system to Creature class. Added KeyManager class to handle key pressed and move() the player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added movement system to Creature class. Added KeyManager class to handle key pressed and move() the player" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/CaptinDutch.iml">
@@ -442,28 +466,6 @@
     <entry file="file://$PROJECT_DIR$/res/textures/spacedungeon.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/captindutch/core/SpriteSheet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="1" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
-          <folding>
-            <element signature="e#180#181#0" expanded="true" />
-            <element signature="e#214#215#0" expanded="true" />
-            <element signature="e#276#277#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/captindutch/core/Assets.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/captindutch/core/Display.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="271">
@@ -487,22 +489,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/captindutch/core/Game.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2484#2485#0" expanded="true" />
-            <element signature="e#2517#2518#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/captindutch/entity/Entity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
-          <caret line="18" column="5" lean-forward="true" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <caret line="18" column="5" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
           <folding>
             <element signature="e#332#333#0" expanded="true" />
             <element signature="e#356#357#0" expanded="true" />
@@ -524,32 +514,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/captindutch/states/State.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#173#174#0" expanded="true" />
-            <element signature="e#204#205#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/captindutch/states/GameState.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="22" selection-start-line="18" selection-start-column="22" selection-end-line="18" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#353#354#0" expanded="true" />
-            <element signature="e#217#218#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/captindutch/input/KeyManager.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
@@ -567,8 +531,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/captindutch/entity/creatures/Creature.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="35" column="24" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="24" />
+        <state relative-caret-position="153">
+          <caret line="9" column="47" selection-start-line="9" selection-start-column="47" selection-end-line="9" selection-end-column="47" />
           <folding>
             <element signature="e#483#484#0" expanded="true" />
             <element signature="e#512#513#0" expanded="true" />
@@ -590,9 +554,53 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/captindutch/tiles/GrassTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+          <folding>
+            <element signature="e#100#101#0" expanded="true" />
+            <element signature="e#120#121#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/captindutch/tiles/RockTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="1" lean-forward="true" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/captindutch/states/State.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#173#174#0" expanded="true" />
+            <element signature="e#204#205#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/captindutch/worlds/World.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="24" column="9" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#144#145#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#528#529#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/captindutch/entity/creatures/Player.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
+        <state relative-caret-position="340">
           <caret line="20" column="15" selection-start-line="20" selection-start-column="15" selection-end-line="20" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -602,16 +610,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/captindutch/core/Game.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="69" column="65" lean-forward="true" selection-start-line="69" selection-start-column="65" selection-end-line="69" selection-end-column="65" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/captindutch/states/GameState.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/captindutch/tiles/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="27" column="5" lean-forward="true" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        <state relative-caret-position="187">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#388#389#0" expanded="true" />
             <element signature="e#416#417#0" expanded="true" />
             <element signature="e#297#298#0" expanded="true" />
             <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#649#650#0" expanded="true" />
+            <element signature="e#670#671#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/captindutch/core/Assets.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="51" selection-start-line="27" selection-start-column="51" selection-end-line="27" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1237#1238#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/captindutch/tiles/BackgroundTile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="e#105#106#0" expanded="true" />
+            <element signature="e#125#126#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/captindutch/core/SpriteSheet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding>
+            <element signature="e#276#277#0" expanded="true" />
+            <element signature="e#337#338#0" expanded="true" />
+            <element signature="e#370#371#0" expanded="true" />
+            <element signature="e#408#409#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+            <element signature="e#482#483#0" expanded="true" />
           </folding>
         </state>
       </provider>

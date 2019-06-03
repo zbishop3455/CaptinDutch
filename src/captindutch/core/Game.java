@@ -7,6 +7,7 @@ import captindutch.states.State;
 
 import java.awt.*;
 import java.awt.image.BufferStrategy;
+import java.awt.image.BufferedImage;
 
 public class Game implements Runnable {
 
@@ -60,9 +61,13 @@ public class Game implements Runnable {
         g = bs.getDrawGraphics();
         g.clearRect(0, 0, width, height);
 
+        BufferedImage tmp = Assets.getAsset(57);
+
+
         if(StateManager.getState() != null)
             StateManager.getState().render(g);
 
+        g.drawImage(Assets.getAsset(1735), 0, 0, 500, 500, null);
         bs.show();
         g.dispose();
     }
