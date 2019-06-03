@@ -1,6 +1,7 @@
 package captindutch.states;
 
-import captindutch.Entity.creatures.Player;
+import captindutch.entity.creatures.Player;
+import captindutch.core.Game;
 
 import java.awt.*;
 
@@ -8,13 +9,14 @@ public class GameState extends State{
 
     private Player player;
 
-    public GameState() {
-         player = new Player(10, 10);
+    public GameState(Game game) {
+        super(game);
+        player = new Player(game,10, 10);
     }
 
     @Override
     public void tick() {
-
+        player.tick();
     }
 
     @Override

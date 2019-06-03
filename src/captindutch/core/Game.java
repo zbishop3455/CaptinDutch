@@ -1,6 +1,7 @@
 package captindutch.core;
 
 import captindutch.StateManager;
+import captindutch.input.KeyManager;
 import captindutch.states.GameState;
 import captindutch.states.State;
 
@@ -11,6 +12,7 @@ public class Game implements Runnable {
 
     private int width, height;
     private Display display;
+    private KeyManager keyManager;
     private Thread thread;
     private boolean running;
     public String title;
@@ -35,11 +37,13 @@ public class Game implements Runnable {
         Assets.init();
 
         // Set state
-        gameState = new GameState();
+        gameState = new GameState(this);
         StateManager.setState(gameState);
 
         // create display
-        this.display = new Display(title, width, height);
+        display = new Display(title, width, height);
+        keyManager = new KeyManager();
+        display.getFrame().addKeyListener(keyManager);
     }
 
 
@@ -54,7 +58,7 @@ public class Game implements Runnable {
 
         // graphics
         g = bs.getDrawGraphics();
-        g.clearRect(100, 100, width, height);
+        g.clearRect(0, 0, width, height);
 
         if(StateManager.getState() != null)
             StateManager.getState().render(g);
@@ -64,6 +68,9 @@ public class Game implements Runnable {
     }
 
     private void tick() {
+
+        keyManager.tick();
+
         if(StateManager.getState() != null)
             StateManager.getState().tick();
     }
@@ -82,7 +89,6 @@ public class Game implements Runnable {
         int ticks = 0;
 
         while (running) {
-
             now = System.nanoTime();
             delta += (now - lastTime) / timePerTick;
             timer += now - lastTime;
@@ -99,11 +105,13 @@ public class Game implements Runnable {
                 System.out.println("Ticks: " + ticks);
                 ticks = 0;
                 timer = 0;
-
             }
         }
-
         stop();
+    }
+
+    public KeyManager getKeyManager() {
+        return keyManager;
     }
 
     public synchronized void start() {
