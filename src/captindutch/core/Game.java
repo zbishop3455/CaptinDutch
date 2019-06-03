@@ -67,7 +67,7 @@ public class Game implements Runnable {
         if(StateManager.getState() != null)
             StateManager.getState().render(g);
 
-        g.drawImage(Assets.getAsset(1735), 0, 0, 500, 500, null);
+        //g.drawImage(Assets.getAsset(1735), 0, 0, 500, 500, null);
         bs.show();
         g.dispose();
     }

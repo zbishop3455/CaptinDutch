@@ -1,11 +1,11 @@
 package captindutch.tiles;
 
-import java.awt.image.BufferedImage;
+import captindutch.core.Assets;
 
 public class BackgroundTile extends Tile {
 
-    public BackgroundTile (BufferedImage texture, int id) {
-        super(texture, id);
+    public BackgroundTile (int id) {
+        super(Assets.getAsset(id), id);
     }
 
 }

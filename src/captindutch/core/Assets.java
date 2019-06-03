@@ -1,5 +1,6 @@
 package captindutch.core;
 
+import captindutch.tiles.BackgroundTile;
 import captindutch.util.ImageLoader;
 
 import java.awt.image.BufferedImage;
@@ -40,6 +41,10 @@ public class Assets {
         grass1 = sheet.crop(32,32,32, 32);
         assetList[0] = grass1;
         rock1 = sheet.crop(34,0, WIDTH, HEIGHT);
+
+        for (int i=0; i<SPRITE_COUNT; i++) {
+            new BackgroundTile(i);
+        }
 
     }
 

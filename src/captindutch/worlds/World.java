@@ -6,8 +6,9 @@ import java.awt.*;
 
 public class World {
 
+    private final int DEFAULT_TILE_ID = 134;
     private int width, height;
-    private int[][] tiles;
+    private int[][] mapTiles;
 
     public World(String path) {
         loadWorld(path);
@@ -20,23 +21,23 @@ public class World {
     public void render(Graphics g) {
         for (int y=0; y<height; y++) {
             for (int x=0; x<width; x++) {
-                //getTile(x, y).render(g, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT);
+                getTile(x, y).render(g, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT);
             }
         }
 
     }
 
     public Tile getTile(int x, int y) {
-        return null;
+        return Tile.tiles[mapTiles[x][y]];
     }
 
     private void loadWorld(String path) {
         width = 5;
         height = 5;
-        tiles = new int[width][height];
+        mapTiles = new int[width][height];
         for (int i=0; i<width; i++) {
             for (int j=0; j<height; j++) {
-                tiles[i][j] = 0;
+                mapTiles[i][j] = DEFAULT_TILE_ID;
             }
         }
     }
