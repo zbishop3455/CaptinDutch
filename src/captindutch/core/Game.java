@@ -14,6 +14,7 @@ public class Game implements Runnable {
     private int width, height;
     private Display display;
     private KeyManager keyManager;
+    private GameCamera gameCamera;
     private Thread thread;
     private boolean running;
     public String title;
@@ -36,6 +37,8 @@ public class Game implements Runnable {
 
         // Load assets
         Assets.init();
+
+        gameCamera = new GameCamera(this, 0, 0);
 
         // Set state
         gameState = new GameState(this);
@@ -60,6 +63,8 @@ public class Game implements Runnable {
         // graphics
         g = bs.getDrawGraphics();
         g.clearRect(0, 0, width, height);
+        g.setColor(new Color(0,0,0));
+        g.fillRect(0,0,width,height);
 
         BufferedImage tmp = Assets.getAsset(57);
 
@@ -119,7 +124,19 @@ public class Game implements Runnable {
         return keyManager;
     }
 
-    public synchronized void start() {
+    public GameCamera getGameCamera() {
+        return gameCamera;
+    }
+
+    public int getWidth() {
+        return width;
+    }
+
+    public int getHeight() {
+        return height;
+    }
+
+    synchronized void start() {
 
         if (running) return;
 
@@ -129,7 +146,7 @@ public class Game implements Runnable {
         thread.start();
     }
 
-    public synchronized void stop() {
+    synchronized void stop() {
 
         if (!running) return;
 

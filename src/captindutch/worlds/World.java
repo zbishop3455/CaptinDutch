@@ -1,6 +1,8 @@
 package captindutch.worlds;
 
+import captindutch.core.Game;
 import captindutch.tiles.Tile;
+import captindutch.util.Util;
 
 import java.awt.*;
 
@@ -8,9 +10,12 @@ public class World {
 
     private final int DEFAULT_TILE_ID = 134;
     private int width, height;
+    private int spawnx, spawny;
     private int[][] mapTiles;
+    private Game game;
 
-    public World(String path) {
+    public World(Game game, String path) {
+        this.game = game;
         loadWorld(path);
     }
 
@@ -21,7 +26,9 @@ public class World {
     public void render(Graphics g) {
         for (int y=0; y<height; y++) {
             for (int x=0; x<width; x++) {
-                getTile(x, y).render(g, x * Tile.TILEWIDTH, y * Tile.TILEHEIGHT);
+                getTile(x, y).render(g,
+                        (int) (x * Tile.TILEWIDTH - game.getGameCamera().getxOffset()),
+                        (int) (y * Tile.TILEHEIGHT - game.getGameCamera().getyOffset()));
             }
         }
 
@@ -32,14 +39,25 @@ public class World {
     }
 
     private void loadWorld(String path) {
-        width = 5;
-        height = 5;
+        String file = Util.loadFileAsString(path);
+
+        // Find width and height of map
+        String[] rows = file.split("\n");
+        String[] firstRow = rows[0].split(",");
+        width = firstRow.length;
+        height = rows.length;
+
+        // Init the map
         mapTiles = new int[width][height];
-        for (int i=0; i<width; i++) {
-            for (int j=0; j<height; j++) {
-                mapTiles[i][j] = DEFAULT_TILE_ID;
+
+        // Populate the map
+        for (int y=0; y<height; y++){
+            String[] curRow = rows[y].split(",");
+            for (int x=0; x<width; x++) {
+                mapTiles[x][y] = Util.patseInt(curRow[x]);
             }
         }
+
     }
 
 }

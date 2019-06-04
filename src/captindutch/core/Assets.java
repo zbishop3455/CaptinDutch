@@ -36,11 +36,7 @@ public class Assets {
             }
         }
 
-        player = sheet.crop(0, 0, WIDTH, HEIGHT);
-
-        grass1 = sheet.crop(32,32,32, 32);
-        assetList[0] = grass1;
-        rock1 = sheet.crop(34,0, WIDTH, HEIGHT);
+        player = getAsset(3793);
 
         for (int i=0; i<SPRITE_COUNT; i++) {
             new BackgroundTile(i);

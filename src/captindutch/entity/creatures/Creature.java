@@ -1,13 +1,14 @@
 package captindutch.entity.creatures;
 
+import captindutch.core.Game;
 import captindutch.entity.Entity;
 
 public abstract class Creature extends Entity {
 
     public static final int DEFUALT_HEALTH = 100;
-    public static final float DEFAULT_SPEED = 6.0f;
-    public static final int DEFAULT_WIDTH = 32;
-    public static final int DEFAULT_HEIGHT = 32;
+    public static final float DEFAULT_SPEED = 3.0f;
+    public static final int DEFAULT_WIDTH = 64;
+    public static final int DEFAULT_HEIGHT = 64;
 
     protected int health;
     protected float speed;
@@ -17,8 +18,8 @@ public abstract class Creature extends Entity {
     protected float xMove;
     protected float yMove;
 
-    public Creature (float x, float y, int width, int height) {
-        super (x, y, width, height);
+    public Creature (Game game, float x, float y, int width, int height) {
+        super (game, x, y, width, height);
         health = DEFUALT_HEALTH;
         speed = DEFAULT_SPEED;
         this.width = width;

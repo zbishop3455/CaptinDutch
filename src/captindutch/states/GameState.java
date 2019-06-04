@@ -13,8 +13,8 @@ public class GameState extends State{
 
     public GameState(Game game) {
         super(game);
-        world = new World("Default");
-        player = new Player(game,10, 10);
+        world = new World(game, "res/worlds/level1.csv");
+        player = new Player(game,100, 100);
     }
 
     @Override
