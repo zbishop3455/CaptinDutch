@@ -1,6 +1,6 @@
 package captindutch.states;
 
-import captindutch.core.Game;
+import captindutch.core.Handler;
 import captindutch.entity.creatures.Player;
 import captindutch.worlds.World;
 
@@ -11,10 +11,11 @@ public class GameState extends State{
     private Player player;
     private World world;
 
-    public GameState(Game game) {
-        super(game);
-        world = new World(game, "res/worlds/level1.csv");
-        player = new Player(game,100, 100);
+    public GameState(Handler handler) {
+        super(handler);
+        world = new World(handler, "res/worlds/level1.csv");
+        handler.setWorld(world);
+        player = new Player(handler,100, 100);
     }
 
     @Override

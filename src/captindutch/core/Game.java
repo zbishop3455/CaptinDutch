@@ -22,6 +22,8 @@ public class Game implements Runnable {
     // States
     private State gameState;
 
+    private Handler handler;
+
     private Graphics g;
     private BufferStrategy bs;
 
@@ -40,8 +42,10 @@ public class Game implements Runnable {
 
         gameCamera = new GameCamera(this, 0, 0);
 
+        handler = new Handler(this);
+
         // Set state
-        gameState = new GameState(this);
+        gameState = new GameState(handler);
         StateManager.setState(gameState);
 
         // create display

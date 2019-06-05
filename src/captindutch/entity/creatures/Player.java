@@ -1,17 +1,17 @@
 package captindutch.entity.creatures;
 
 import captindutch.core.Assets;
-import captindutch.core.Game;
+import captindutch.core.Handler;
 
 import java.awt.*;
 
 public class Player extends Creature {
 
-    private Game game;
+    private Handler handler;
 
-    public Player(Game game, float x, float y) {
-        super(game, x, y, Player.DEFAULT_WIDTH, Player.DEFAULT_HEIGHT);
-        this.game = game;
+    public Player(Handler handler, float x, float y) {
+        super(handler, x, y, Player.DEFAULT_WIDTH, Player.DEFAULT_HEIGHT);
+        this.handler = handler;
 
     }
 
@@ -19,31 +19,31 @@ public class Player extends Creature {
     public void tick() {
         getInput();
         move();
-        game.getGameCamera().centerOnEntity(this);
+        handler.getGameCamera().centerOnEntity(this);
     }
 
     @Override
     public void render(Graphics g) {
-        g.drawImage(Assets.player, (int) (x - game.getGameCamera().getxOffset()), (int) (y - game.getGameCamera().getyOffset()), width, height, null);
+        g.drawImage(Assets.player, (int) (x - handler.getGameCamera().getxOffset()), (int) (y - handler.getGameCamera().getyOffset()), width, height, null);
     }
 
     private void getInput(){
         xMove = 0;
         yMove = 0;
 
-        if(game.getKeyManager().up) {
+        if(handler.getKeyManager().up) {
             this.yMove = -speed;
         }
 
-        if(game.getKeyManager().down) {
+        if(handler.getKeyManager().down) {
             this.yMove = +speed;
         }
 
-        if(game.getKeyManager().left) {
+        if(handler.getKeyManager().left) {
             this.xMove = -speed;
         }
 
-        if(game.getKeyManager().right) {
+        if(handler.getKeyManager().right) {
             this.xMove = +speed;
         }
     }

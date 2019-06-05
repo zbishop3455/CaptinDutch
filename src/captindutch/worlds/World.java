@@ -1,6 +1,6 @@
 package captindutch.worlds;
 
-import captindutch.core.Game;
+import captindutch.core.Handler;
 import captindutch.tiles.Tile;
 import captindutch.util.Util;
 
@@ -12,10 +12,10 @@ public class World {
     private int width, height;
     private int spawnx, spawny;
     private int[][] mapTiles;
-    private Game game;
+    private Handler handler;
 
-    public World(Game game, String path) {
-        this.game = game;
+    public World(Handler handler, String path) {
+        this.handler = handler;
         loadWorld(path);
     }
 
@@ -24,11 +24,17 @@ public class World {
     }
 
     public void render(Graphics g) {
-        for (int y=0; y<height; y++) {
-            for (int x=0; x<width; x++) {
+
+        int xStart = (int) Math.max(0, handler.getGameCamera().getxOffset() / Tile.TILEWIDTH );
+        int xEnd = (int) Math.min(width, (handler.getGameCamera().getxOffset() + handler.getWidth()) / Tile.TILEWIDTH + 1);
+        int yStart = (int) Math.max(0, handler.getGameCamera().getyOffset() / Tile.TILEHEIGHT);
+        int yEnd = (int) Math.min(height, (handler.getGameCamera().getyOffset() + handler.getHeight()) / Tile.TILEHEIGHT + 1);
+
+        for (int y=yStart; y<yEnd; y++) {
+            for (int x=xStart; x<xEnd; x++) {
                 getTile(x, y).render(g,
-                        (int) (x * Tile.TILEWIDTH - game.getGameCamera().getxOffset()),
-                        (int) (y * Tile.TILEHEIGHT - game.getGameCamera().getyOffset()));
+                        (int) (x * Tile.TILEWIDTH - handler.getGameCamera().getxOffset()),
+                        (int) (y * Tile.TILEHEIGHT - handler.getGameCamera().getyOffset()));
             }
         }
 
