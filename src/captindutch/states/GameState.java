@@ -13,7 +13,7 @@ public class GameState extends State{
 
     public GameState(Handler handler) {
         super(handler);
-        world = new World(handler, "res/worlds/level1.csv");
+        world = new World(handler, "res/worlds/map1_tiles.csv", "res/worlds/map1_collision.csv");
         handler.setWorld(world);
         player = new Player(handler,100, 100);
     }

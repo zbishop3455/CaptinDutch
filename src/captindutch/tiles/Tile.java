@@ -10,8 +10,6 @@ public class Tile {
     public static final int TILEWIDTH = 64;
     public static final int TILEHEIGHT = 64;
 
-    protected boolean solid = false;
-
     protected BufferedImage texture;
     protected final int id;
 
@@ -32,10 +30,6 @@ public class Tile {
 
     public int getId(){
         return this.id;
-    }
-
-    public boolean isSolid() {
-        return solid;
     }
 
 }
