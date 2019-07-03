@@ -11,6 +11,8 @@ import java.awt.image.BufferedImage;
 
 public class Game implements Runnable {
 
+    public static final boolean HIT_BOX_DEBUG = false;
+
     private int width, height;
     private Display display;
     private KeyManager keyManager;
@@ -39,10 +41,8 @@ public class Game implements Runnable {
 
         // Load assets
         Assets.init();
-
-        gameCamera = new GameCamera(this, 0, 0);
-
         handler = new Handler(this);
+        gameCamera = new GameCamera(handler, 0, 0);
 
         // Set state
         gameState = new GameState(handler);

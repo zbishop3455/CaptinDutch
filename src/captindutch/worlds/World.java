@@ -1,6 +1,9 @@
 package captindutch.worlds;
 
 import captindutch.core.Handler;
+import captindutch.entity.EntityManager;
+import captindutch.entity.creatures.Player;
+import captindutch.entity.senic.Tree1;
 import captindutch.tiles.Tile;
 import captindutch.util.Util;
 
@@ -14,14 +17,22 @@ public class World {
     private int[][] mapTiles;
     private boolean[][] mapCollision;
     private Handler handler;
+    private EntityManager entityManager;
 
     public World(Handler handler, String mapPath, String collisionMapPath) {
         this.handler = handler;
+        entityManager = new EntityManager(handler, new Player(handler,150, 150));
         loadWorld(mapPath, collisionMapPath);
+        // set player spawn
+        spawnx = 150;
+        spawny = 150;
+        entityManager.getPlayer().setX(spawnx);
+        entityManager.getPlayer().setY(spawny);
+        entityManager.addEntity(new Tree1(handler, 100, 500));
     }
 
     public void tick() {
-
+        entityManager.tick();
     }
 
     public void render(Graphics g) {
@@ -38,6 +49,9 @@ public class World {
                         (int) (y * Tile.TILEHEIGHT - handler.getGameCamera().getyOffset()));
             }
         }
+
+        // Entities
+        entityManager.render(g);
 
     }
 
@@ -80,6 +94,14 @@ public class World {
                 }
             }
         }
+    }
+
+    public int getWidth() {
+        return this.width;
+    }
+
+    public int getHeight() {
+        return this.height;
     }
 
 }
